@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6A2DDF918ABCE70008143AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A2DDF818ABCE70008143AC /* Foundation.framework */; };
+		F6A2DDFE18ABCE70008143AC /* BNRCredentialDepot.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F6A2DDFD18ABCE70008143AC /* BNRCredentialDepot.h */; };
+		F6A2DE0018ABCE70008143AC /* BNRCredentialDepot.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A2DDFF18ABCE70008143AC /* BNRCredentialDepot.m */; };
+		F6A2DE0718ABCE70008143AC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A2DE0618ABCE70008143AC /* XCTest.framework */; };
+		F6A2DE0818ABCE70008143AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A2DDF818ABCE70008143AC /* Foundation.framework */; };
+		F6A2DE0D18ABCE70008143AC /* libBNRCredentialDepot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A2DDF518ABCE70008143AC /* libBNRCredentialDepot.a */; };
+		F6A2DE1318ABCE70008143AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6A2DE1118ABCE70008143AC /* InfoPlist.strings */; };
+		F6A2DE1518ABCE70008143AC /* BNRCredentialDepotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A2DE1418ABCE70008143AC /* BNRCredentialDepotTests.m */; };
+		F6A2DE2418ABD0E0008143AC /* BNRCredentialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A2DE2318ABD0E0008143AC /* BNRCredentialManager.m */; };
+		F6A2DE2918ABD16A008143AC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A2DE2818ABD169008143AC /* CoreData.framework */; };
+		F6A2DE4118ABD4E1008143AC /* Credentials.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6A2DE3F18ABD4E1008143AC /* Credentials.xcdatamodeld */; };
+		F6A2DE4518ABD642008143AC /* UserCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A2DE4418ABD642008143AC /* UserCredentials.m */; };
+		F6A2DE4818ABDD0F008143AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A2DE4718ABDD0F008143AC /* UIKit.framework */; };
+		F6A2DE7C18ABDEDB008143AC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A2DE5F18ABDD7B008143AC /* Cocoa.framework */; };
+		F6A2DE8318ABDEDB008143AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6A2DE8118ABDEDB008143AC /* InfoPlist.strings */; };
+		F6A2DE8818ABDF16008143AC /* Credentials.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6A2DE3F18ABD4E1008143AC /* Credentials.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6A2DE0B18ABCE70008143AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6A2DDED18ABCE70008143AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6A2DDF418ABCE70008143AC;
+			remoteInfo = BNRCredentialDepot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6A2DDF318ABCE70008143AC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				F6A2DDFE18ABCE70008143AC /* BNRCredentialDepot.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F6A2DDF518ABCE70008143AC /* libBNRCredentialDepot.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBNRCredentialDepot.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A2DDF818ABCE70008143AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F6A2DDFC18ABCE70008143AC /* BNRCredentialDepot-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BNRCredentialDepot-Prefix.pch"; sourceTree = "<group>"; };
+		F6A2DDFD18ABCE70008143AC /* BNRCredentialDepot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRCredentialDepot.h; sourceTree = "<group>"; };
+		F6A2DDFF18ABCE70008143AC /* BNRCredentialDepot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRCredentialDepot.m; sourceTree = "<group>"; };
+		F6A2DE0518ABCE70008143AC /* BNRCredentialDepotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BNRCredentialDepotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A2DE0618ABCE70008143AC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F6A2DE1018ABCE70008143AC /* BNRCredentialDepotTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BNRCredentialDepotTests-Info.plist"; sourceTree = "<group>"; };
+		F6A2DE1218ABCE70008143AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6A2DE1418ABCE70008143AC /* BNRCredentialDepotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRCredentialDepotTests.m; sourceTree = "<group>"; };
+		F6A2DE2218ABD0E0008143AC /* BNRCredentialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRCredentialManager.h; sourceTree = "<group>"; };
+		F6A2DE2318ABD0E0008143AC /* BNRCredentialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRCredentialManager.m; sourceTree = "<group>"; };
+		F6A2DE2518ABD0FD008143AC /* BNRConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRConstants.h; sourceTree = "<group>"; };
+		F6A2DE2818ABD169008143AC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F6A2DE4018ABD4E1008143AC /* Credentials.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Credentials.xcdatamodel; sourceTree = "<group>"; };
+		F6A2DE4318ABD642008143AC /* UserCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCredentials.h; sourceTree = "<group>"; };
+		F6A2DE4418ABD642008143AC /* UserCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCredentials.m; sourceTree = "<group>"; };
+		F6A2DE4718ABDD0F008143AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F6A2DE5F18ABDD7B008143AC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		F6A2DE6718ABDE5C008143AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F6A2DE6818ABDE5C008143AC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F6A2DE7B18ABDEDB008143AC /* CredentialsDepot.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CredentialsDepot.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A2DE8018ABDEDB008143AC /* CredentialsDepot-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CredentialsDepot-Info.plist"; sourceTree = "<group>"; };
+		F6A2DE8218ABDEDB008143AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6A2DE8418ABDEDB008143AC /* CredentialsDepot-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CredentialsDepot-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6A2DDF218ABCE70008143AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A2DE4818ABDD0F008143AC /* UIKit.framework in Frameworks */,
+				F6A2DE2918ABD16A008143AC /* CoreData.framework in Frameworks */,
+				F6A2DDF918ABCE70008143AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A2DE0218ABCE70008143AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A2DE0718ABCE70008143AC /* XCTest.framework in Frameworks */,
+				F6A2DE0D18ABCE70008143AC /* libBNRCredentialDepot.a in Frameworks */,
+				F6A2DE0818ABCE70008143AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A2DE7818ABDEDB008143AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A2DE7C18ABDEDB008143AC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6A2DDEC18ABCE70008143AC = {
+			isa = PBXGroup;
+			children = (
+				F6A2DDFA18ABCE70008143AC /* BNRCredentialDepot */,
+				F6A2DE0E18ABCE70008143AC /* BNRCredentialDepotTests */,
+				F6A2DE7E18ABDEDB008143AC /* CredentialsDepot */,
+				F6A2DDF718ABCE70008143AC /* Frameworks */,
+				F6A2DDF618ABCE70008143AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6A2DDF618ABCE70008143AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6A2DDF518ABCE70008143AC /* libBNRCredentialDepot.a */,
+				F6A2DE0518ABCE70008143AC /* BNRCredentialDepotTests.xctest */,
+				F6A2DE7B18ABDEDB008143AC /* CredentialsDepot.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6A2DDF718ABCE70008143AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6A2DE5F18ABDD7B008143AC /* Cocoa.framework */,
+				F6A2DE4718ABDD0F008143AC /* UIKit.framework */,
+				F6A2DE2818ABD169008143AC /* CoreData.framework */,
+				F6A2DDF818ABCE70008143AC /* Foundation.framework */,
+				F6A2DE0618ABCE70008143AC /* XCTest.framework */,
+				F6A2DE3118ABD4B0008143AC /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6A2DDFA18ABCE70008143AC /* BNRCredentialDepot */ = {
+			isa = PBXGroup;
+			children = (
+				F6A2DE2518ABD0FD008143AC /* BNRConstants.h */,
+				F6A2DDFD18ABCE70008143AC /* BNRCredentialDepot.h */,
+				F6A2DDFF18ABCE70008143AC /* BNRCredentialDepot.m */,
+				F6A2DE2118ABD0E0008143AC /* CoreDataManager */,
+				F6A2DDFB18ABCE70008143AC /* Supporting Files */,
+			);
+			path = BNRCredentialDepot;
+			sourceTree = "<group>";
+		};
+		F6A2DDFB18ABCE70008143AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6A2DDFC18ABCE70008143AC /* BNRCredentialDepot-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6A2DE0E18ABCE70008143AC /* BNRCredentialDepotTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6A2DE1418ABCE70008143AC /* BNRCredentialDepotTests.m */,
+				F6A2DE0F18ABCE70008143AC /* Supporting Files */,
+			);
+			path = BNRCredentialDepotTests;
+			sourceTree = "<group>";
+		};
+		F6A2DE0F18ABCE70008143AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6A2DE1018ABCE70008143AC /* BNRCredentialDepotTests-Info.plist */,
+				F6A2DE1118ABCE70008143AC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6A2DE2118ABD0E0008143AC /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				F6A2DE2218ABD0E0008143AC /* BNRCredentialManager.h */,
+				F6A2DE2318ABD0E0008143AC /* BNRCredentialManager.m */,
+				F6A2DE4318ABD642008143AC /* UserCredentials.h */,
+				F6A2DE4418ABD642008143AC /* UserCredentials.m */,
+				F6A2DE3F18ABD4E1008143AC /* Credentials.xcdatamodeld */,
+			);
+			path = CoreDataManager;
+			sourceTree = "<group>";
+		};
+		F6A2DE3118ABD4B0008143AC /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6A2DE6718ABDE5C008143AC /* Foundation.framework */,
+				F6A2DE6818ABDE5C008143AC /* CoreData.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F6A2DE7E18ABDEDB008143AC /* CredentialsDepot */ = {
+			isa = PBXGroup;
+			children = (
+				F6A2DE7F18ABDEDB008143AC /* Supporting Files */,
+			);
+			path = CredentialsDepot;
+			sourceTree = "<group>";
+		};
+		F6A2DE7F18ABDEDB008143AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6A2DE8018ABDEDB008143AC /* CredentialsDepot-Info.plist */,
+				F6A2DE8118ABDEDB008143AC /* InfoPlist.strings */,
+				F6A2DE8418ABDEDB008143AC /* CredentialsDepot-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6A2DDF418ABCE70008143AC /* BNRCredentialDepot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A2DE1818ABCE70008143AC /* Build configuration list for PBXNativeTarget "BNRCredentialDepot" */;
+			buildPhases = (
+				F6A2DDF118ABCE70008143AC /* Sources */,
+				F6A2DDF218ABCE70008143AC /* Frameworks */,
+				F6A2DDF318ABCE70008143AC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BNRCredentialDepot;
+			productName = BNRCredentialDepot;
+			productReference = F6A2DDF518ABCE70008143AC /* libBNRCredentialDepot.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F6A2DE0418ABCE70008143AC /* BNRCredentialDepotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A2DE1B18ABCE70008143AC /* Build configuration list for PBXNativeTarget "BNRCredentialDepotTests" */;
+			buildPhases = (
+				F6A2DE0118ABCE70008143AC /* Sources */,
+				F6A2DE0218ABCE70008143AC /* Frameworks */,
+				F6A2DE0318ABCE70008143AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6A2DE0C18ABCE70008143AC /* PBXTargetDependency */,
+			);
+			name = BNRCredentialDepotTests;
+			productName = BNRCredentialDepotTests;
+			productReference = F6A2DE0518ABCE70008143AC /* BNRCredentialDepotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F6A2DE7A18ABDEDB008143AC /* CredentialsDepot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A2DE8518ABDEDB008143AC /* Build configuration list for PBXNativeTarget "CredentialsDepot" */;
+			buildPhases = (
+				F6A2DE7718ABDEDB008143AC /* Sources */,
+				F6A2DE7818ABDEDB008143AC /* Frameworks */,
+				F6A2DE7918ABDEDB008143AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CredentialsDepot;
+			productName = CredentialsDepot;
+			productReference = F6A2DE7B18ABDEDB008143AC /* CredentialsDepot.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6A2DDED18ABCE70008143AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Bharath Nagaraj Rao";
+			};
+			buildConfigurationList = F6A2DDF018ABCE70008143AC /* Build configuration list for PBXProject "BNRCredentialDepot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F6A2DDEC18ABCE70008143AC;
+			productRefGroup = F6A2DDF618ABCE70008143AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6A2DDF418ABCE70008143AC /* BNRCredentialDepot */,
+				F6A2DE0418ABCE70008143AC /* BNRCredentialDepotTests */,
+				F6A2DE7A18ABDEDB008143AC /* CredentialsDepot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6A2DE0318ABCE70008143AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A2DE1318ABCE70008143AC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A2DE7918ABDEDB008143AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A2DE8318ABDEDB008143AC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6A2DDF118ABCE70008143AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A2DE0018ABCE70008143AC /* BNRCredentialDepot.m in Sources */,
+				F6A2DE4518ABD642008143AC /* UserCredentials.m in Sources */,
+				F6A2DE2418ABD0E0008143AC /* BNRCredentialManager.m in Sources */,
+				F6A2DE4118ABD4E1008143AC /* Credentials.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A2DE0118ABCE70008143AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A2DE1518ABCE70008143AC /* BNRCredentialDepotTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A2DE7718ABDEDB008143AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A2DE8818ABDF16008143AC /* Credentials.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6A2DE0C18ABCE70008143AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6A2DDF418ABCE70008143AC /* BNRCredentialDepot */;
+			targetProxy = F6A2DE0B18ABCE70008143AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6A2DE1118ABCE70008143AC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6A2DE1218ABCE70008143AC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F6A2DE8118ABDEDB008143AC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6A2DE8218ABDEDB008143AC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6A2DE1618ABCE70008143AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F6A2DE1718ABCE70008143AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6A2DE1918ABCE70008143AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BNRCredentialDepot.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BNRCredentialDepot/BNRCredentialDepot-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F6A2DE1A18ABCE70008143AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/BNRCredentialDepot.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BNRCredentialDepot/BNRCredentialDepot-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F6A2DE1C18ABCE70008143AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BNRCredentialDepot/BNRCredentialDepot-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BNRCredentialDepotTests/BNRCredentialDepotTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F6A2DE1D18ABCE70008143AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BNRCredentialDepot/BNRCredentialDepot-Prefix.pch";
+				INFOPLIST_FILE = "BNRCredentialDepotTests/BNRCredentialDepotTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		F6A2DE8618ABDEDB008143AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CredentialsDepot/CredentialsDepot-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CredentialsDepot/CredentialsDepot-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		F6A2DE8718ABDEDB008143AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CredentialsDepot/CredentialsDepot-Prefix.pch";
+				INFOPLIST_FILE = "CredentialsDepot/CredentialsDepot-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6A2DDF018ABCE70008143AC /* Build configuration list for PBXProject "BNRCredentialDepot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A2DE1618ABCE70008143AC /* Debug */,
+				F6A2DE1718ABCE70008143AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6A2DE1818ABCE70008143AC /* Build configuration list for PBXNativeTarget "BNRCredentialDepot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A2DE1918ABCE70008143AC /* Debug */,
+				F6A2DE1A18ABCE70008143AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F6A2DE1B18ABCE70008143AC /* Build configuration list for PBXNativeTarget "BNRCredentialDepotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A2DE1C18ABCE70008143AC /* Debug */,
+				F6A2DE1D18ABCE70008143AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F6A2DE8518ABDEDB008143AC /* Build configuration list for PBXNativeTarget "CredentialsDepot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A2DE8618ABDEDB008143AC /* Debug */,
+				F6A2DE8718ABDEDB008143AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F6A2DE3F18ABD4E1008143AC /* Credentials.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F6A2DE4018ABD4E1008143AC /* Credentials.xcdatamodel */,
+			);
+			currentVersion = F6A2DE4018ABD4E1008143AC /* Credentials.xcdatamodel */;
+			path = Credentials.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F6A2DDED18ABCE70008143AC /* Project object */;
+}
